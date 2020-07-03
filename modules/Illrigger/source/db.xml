@@ -151,7 +151,7 @@
 					<source type="string">Illrigger</source>
 					<specializationchoice type="number">0</specializationchoice>
 					<text type="formattedtext">
-						<p>At 1st level, you gain proficiency in either Intimidation, Deception, or Persuasion. If you already have proficiency in one of these skills, you may instead choose to gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus.</p>
+						<p>You have a facility with speech and know how to manipulate an audience. Whenever you make an ability check to persuade, deceive, or intimidate, you can treat a d20 roll of 7 or lower as an 8.</p>
 					</text>
 				</id-00001>
 				<id-00002>
@@ -225,6 +225,7 @@
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00013">Invoke Authority (Shadowmaster)</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00017">Flash of Brimstone</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00018">Bonus Proficiencies (Shadowmaster)</link>
+							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00045">Dagger Adept</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00025">Marked for Death</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00019">Relentless</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00020">Only a Memory</link>
@@ -442,6 +443,21 @@
 						<p>At 20th level you may use your action to become a Greater Shadow for one minute. You gain damage resistance to acid, cold, fire, lightning, thunder, bludgeoning, piercing, and slashing damage. You gain Incorporeal Movement and a fly speed of 50. You can move through other creatures and objects as if they were difficult terrain. You take 55 (10d10) force damage if you end your turn inside an object. Your weapon attacks deal necrotic damage and successful attacks drain 1d4 strength from the target. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later. You regain the use of this ability after a long rest.</p>
 					</text>
 				</id-00023>
+				<id-00024>
+					<level type="number">3</level>
+					<locked type="number">1</locked>
+					<name type="string">Dagger Adept</name>
+					<specialization type="string">Shadowmaster</specialization>
+					<source type="string">Illrigger</source>
+					<specializationchoice type="number">0</specializationchoice>
+					<text type="formattedtext">
+						<p>Your training makes you skilled with certain light weapons. While two-weapon fighting with daggers and/or sickles, you can add your ability modifier to the damage of the second attack, and you can draw or stow two daggers or sickles when you would normally be able to draw or stow only one.</p>
+						<p>At 5th level your daggers and sickles do 1d6 damage.</p>
+						<p>At 9th level while two-weapon fighting with daggers and/or sickles you attack three times whenever you take the Attack action on your turn.</p>
+						<p>At 11th level your daggers and sickles do 1d8 damage.</p>
+						<p>At 17th level your daggers and sickles do 1d10 damage.</p>
+					</text>
+				</id-00024>
 			</featurelist>
 			<hp>
 				<deathsavefail type="number">0</deathsavefail>
@@ -1248,7 +1264,7 @@
 					<source type="string">Illrigger</source>
 					<specializationchoice type="number">0</specializationchoice>
 					<text type="formattedtext">
-						<p>At 1st level, you gain proficiency in either Intimidation, Deception, or Persuasion. If you already have proficiency in one of these skills, you may instead choose to gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus.</p>
+						<p>You have a facility with speech and know how to manipulate an audience. Whenever you make an ability check to persuade, deceive, or intimidate, you can treat a d20 roll of 7 or lower as an 8.</p>
 					</text>
 				</id-00001>
 				<id-00002>
@@ -1723,10 +1739,9 @@
 					<specialization type="string">Architect of Ruin</specialization>
 					<specializationchoice type="number">0</specializationchoice>
 					<text type="formattedtext">
-						<p>At 20th level you may use your action to become a Lore Devil for one minute. Your Charisma becomes 24 (+7) increasing your number of seals, your spell DC, and any other charisma-based effects accordingly. Any ongoing spells you are maintaining from before you transformed into a Lore Devil keep their original DC. You emanate an interference aura, forcing any creature within 60’ attempting to cast a spell to first succeed at a DC 18 Intelligence saving throw or the spell fails and they lose the spell slot.</p>
-						<p>At the start of each of your turns, you roll 1d4 and recover that many levels in spell slots. You may combine these slots however you wish. If you roll a four, you may recover four 1st level spell slots, one 4th level spell slot, two 2nd level slots, or one 3rd level and one 1st level slot.</p>
-						<p>If you do not have enough spent slots to use all the slots you recover, you recover all you can and ignore the excess. For instance, if you roll a 4, but only have one spent 1st level slot, you recover that slot and ignore the excess.</p>
-						<p>You replenish this ability after a long rest. At their discretion, your GM may choose one codex and grant you limited use of one of the abilities from that codex.</p>
+						<p>At 20th level you may use your action to become a Lore Devil for one minute. You gain three extra seals. Enemies with seals on them automatically fail their saving throws against your spells. You emanate an interference aura, forcing any creature within 60’ attempting to cast a spell to first succeed at a DC 18 Intelligence saving throw or the spell fails and they lose the spell slot.</p>
+						<p>Whenever you use a spell slot to cast a spell, there is a 25% chance the spell works normally but you do not lose the spell slot.</p>
+						<p>Your type becomes (devil) and while you are in this form, Hell is your home plane. You replenish this ability after a long rest. At their discretion, your GM may choose one codex and grant you limited use of one of the abilities from that codex.</p>
 					</text>
 				</id-00022>
 			</featurelist>
@@ -2190,27 +2205,20 @@
 						<id-00002>
 							<durmod type="number">1</durmod>
 							<durunit type="string">minute</durunit>
-							<label type="string">Lore Devil; CHA: [-2CHA]; CHA: 14</label>
+							<label type="string">Lore Devil</label>
 							<order type="number">2</order>
 							<targeting type="string">self</targeting>
 							<type type="string">effect</type>
 						</id-00002>
-						<id-00003>
-							<apply type="string">roll</apply>
-							<durmod type="number">1</durmod>
-							<label type="string">Pre-Lore Devil Spell; SAVE: [-CHA]; SAVE: 7</label>
-							<order type="number">3</order>
-							<type type="string">effect</type>
-						</id-00003>
 					</actions>
 					<cast type="number">0</cast>
 					<description type="formattedtext">
-						<p>At 20th level you may use your action to become a Lore Devil for one minute. Your Charisma becomes 24 (+7) increasing your number of seals, your spell DC, and any other charisma-based effects accordingly. Any ongoing spells you are maintaining from before you transformed into a Lore Devil keep their original DC. You emanate an interference aura, forcing any creature within 60’ attempting to cast a spell to first succeed at a DC 18 Intelligence saving throw or the spell fails and they lose the spell slot.</p>
-						<p>At the start of each of your turns, you roll 1d4 and recover that many levels in spell slots. You may combine these slots however you wish. If you roll a four, you may recover four 1st level spell slots, one 4th level spell slot, two 2nd level slots, or one 3rd level and one 1st level slot.</p>
-						<p>If you do not have enough spent slots to use all the slots you recover, you recover all you can and ignore the excess. For instance, if you roll a 4, but only have one spent 1st level slot, you recover that slot and ignore the excess.</p>
-						<p>You replenish this ability after a long rest. At their discretion, your GM may choose one codex and grant you limited use of one of the abilities from that codex.</p>
+						<p>At 20th level you may use your action to become a Lore Devil for one minute. You gain three extra seals. Enemies with seals on them automatically fail their saving throws against your spells. You emanate an interference aura, forcing any creature within 60’ attempting to cast a spell to first succeed at a DC 18 Intelligence saving throw or the spell fails and they lose the spell slot.</p>
+						<p>Whenever you use a spell slot to cast a spell, there is a 25% chance the spell works normally but you do not lose the spell slot.</p>
+						<p>Your type becomes (devil) and while you are in this form, Hell is your home plane. You replenish this ability after a long rest. At their discretion, your GM may choose one codex and grant you limited use of one of the abilities from that codex.</p>
 					</description>
 					<group type="string">Lore Devil</group>
+					<level type="number">0</level>
 					<locked type="number">1</locked>
 					<name type="string">Lore Devil</name>
 					<prepared type="number">0</prepared>
@@ -2716,7 +2724,7 @@
 					<source type="string">Illrigger</source>
 					<specializationchoice type="number">0</specializationchoice>
 					<text type="formattedtext">
-						<p>At 1st level, you gain proficiency in either Intimidation, Deception, or Persuasion. If you already have proficiency in one of these skills, you may instead choose to gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus.</p>
+						<p>You have a facility with speech and know how to manipulate an audience. Whenever you make an ability check to persuade, deceive, or intimidate, you can treat a d20 roll of 7 or lower as an 8.</p>
 					</text>
 				</id-00001>
 				<id-00002>
@@ -2791,8 +2799,8 @@
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00012">Invoke Authority (Painkiller)</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00024">Bonus Proficiencies (Painkiller)</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00033">I Am Death</link>
-							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00028">Battlefield Commander</link>
-							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00029">Leadership</link>
+							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00028">By the Throat</link>
+							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00029">Telekinetic Seal</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00034">Hell's Fury</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00030">You Die on My Command</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00035">Deathstrike</link>
@@ -2907,23 +2915,23 @@
 				<id-00014>
 					<level type="number">7</level>
 					<locked type="number">1</locked>
-					<name type="string">Battlefield Commander</name>
+					<name type="string">By the Throat</name>
 					<source type="string">Illrigger</source>
 					<specialization type="string">Painkiller</specialization>
 					<specializationchoice type="number">0</specializationchoice>
 					<text type="formattedtext">
-						<p>Upon reaching 7th level your strength or constitution increases by 1, to a maximum of 20.</p>
+						<p>Starting at 7th level you may, as an action, place a seal on an enemy within 30'. If they are large or smaller, they must make a wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier) or be grappled (escape DC 15) and the target is restrained until the grapple ends.</p>
 					</text>
 				</id-00014>
 				<id-00015>
 					<level type="number">9</level>
 					<locked type="number">1</locked>
-					<name type="string">Leadership</name>
+					<name type="string">Telekinetic Seal</name>
 					<source type="string">Illrigger</source>
 					<specialization type="string">Painkiller</specialization>
 					<specializationchoice type="number">0</specializationchoice>
 					<text type="formattedtext">
-						<p>At 9th level, allies who can see and hear you gain +2 to their rolls when making a strength or dexterity skill check or saving throw.</p>
+						<p>Starting at 9th level you may, as a reaction to an enemy moving into a space adjacent to you, place a seal on them. If you do, they must make a wisdom saving throw. If they fail, they are thrown back 30 feet and knocked prone.</p>
 					</text>
 				</id-00015>
 				<id-00016>
@@ -2998,7 +3006,8 @@
 					<specialization type="string">Painkiller</specialization>
 					<specializationchoice type="number">0</specializationchoice>
 					<text type="formattedtext">
-						<p>At 20th level you may use your action to become a Pain Devil for one minute. Your size becomes large. Your Strength becomes 26 (+8) and your Constitution becomes 24 (+7). You emanate an aura of pain forcing every creature that starts their turn within 20 feet of you to make a DC 16 Constitution saving throw or suffer 4d12 points of damage on a failed save (half that on a successful saving throw) at the beginning of each turn as wounds in their flesh spontaneously open. Affected targets can repeat the saving throw at the end of each of their turns, ending the effect on a success. Once a creature saves, they are immune to this ability for 24 hours.</p>
+						<p>At 20th level you may use your action to become a Pain Devil for one minute. Your size becomes large. Your gain +3 to hit and damage with melee weapons. You gain 100 temporary hit points.</p>
+						<p>You emanate an aura of pain forcing every creature that starts their turn within 20 feet of you to make a DC 16 Constitution saving throw or suffer 4d12 points of force damage on a failed save (half that on a successful saving throw) at the beginning of each turn as wounds in their flesh spontaneously open. Affected targets can repeat the saving throw at the end of each of their turns, ending the effect on a success. Once a creature saves, they are immune to this ability for 24 hours.</p>
 						<p>Your type becomes (devil) and while you are in this form, Hell is your home plane. You replenish this ability after a long rest.</p>
 					</text>
 				</id-00022>
@@ -3020,6 +3029,15 @@
 			<perception type="number">10</perception>
 			<perceptionmodifier type="number">0</perceptionmodifier>
 			<powergroup>
+				<id-00001>
+					<atkmod type="number">0</atkmod>
+					<atkprof type="number">1</atkprof>
+					<name type="string">By the Throat</name>
+					<prepared type="number">0</prepared>
+					<savemod type="number">0</savemod>
+					<saveprof type="number">1</saveprof>
+					<uses type="number">0</uses>
+				</id-00001>
 				<id-00002>
 					<atkmod type="number">0</atkmod>
 					<atkprof type="number">1</atkprof>
@@ -3074,7 +3092,7 @@
 					<uses type="number">1</uses>
 				</id-00008>
 				<id-00009>
-					<name type="string">Leadership</name>
+					<name type="string">Telekinetic Seal</name>
 				</id-00009>
 				<id-00011>
 					<atkmod type="number">0</atkmod>
@@ -3090,7 +3108,13 @@
 					<name type="string">Steelmind</name>
 				</id-00012>
 				<id-00013>
+					<atkmod type="number">0</atkmod>
+					<atkprof type="number">1</atkprof>
 					<name type="string">Pain Devil</name>
+					<prepared type="number">0</prepared>
+					<savemod type="number">0</savemod>
+					<saveprof type="number">1</saveprof>
+					<uses type="number">1</uses>
 				</id-00013>
 			</powergroup>
 			<powermeta>
@@ -3395,19 +3419,31 @@
 				<id-00010>
 					<actions>
 						<id-00001>
-							<durmod type="number">0</durmod>
-							<label type="string">Leadership; SAVE: 2, strength, dexterity; CHECK: 2, strength, dexterity</label>
+							<atkmod type="number">0</atkmod>
+							<atkprof type="number">1</atkprof>
 							<order type="number">1</order>
-							<type type="string">effect</type>
+							<savedcbase type="string">ability</savedcbase>
+							<savedcmod type="number">0</savedcmod>
+							<savedcprof type="number">1</savedcprof>
+							<savedcstat type="string">charisma</savedcstat>
+							<savemagic type="number">0</savemagic>
+							<savetype type="string">wisdom</savetype>
+							<type type="string">cast</type>
 						</id-00001>
+						<id-00002>
+							<label type="string">Prone</label>
+							<order type="number">2</order>
+							<type type="string">effect</type>
+						</id-00002>
 					</actions>
 					<cast type="number">0</cast>
 					<description type="formattedtext">
-						<p>At 9th level, allies who can see and hear you gain +2 to their rolls when making a strength or dexterity skill check or saving throw.</p>
+						<p>Starting at 9th level you may, as a reaction to an enemy moving into a space adjacent to you, place a seal on them. If you do, they must make a wisdom saving throw. If they fail, they are thrown back 30 feet and knocked prone.</p>
 					</description>
-					<group type="string">Leadership</group>
+					<group type="string">Telekinetic Seal</group>
+					<level type="number">0</level>
 					<locked type="number">1</locked>
-					<name type="string">Leadership</name>
+					<name type="string">Telekinetic Seal</name>
 					<prepared type="number">0</prepared>
 					<specialization type="string">Painkiller</specialization>
 					<specializationchoice type="number">0</specializationchoice>
@@ -3478,7 +3514,7 @@
 									<bonus type="number">0</bonus>
 									<dice type="dice">4d12</dice>
 									<statmult type="number">1</statmult>
-									<type type="string">necrotic</type>
+									<type type="string">force</type>
 								</id-00001>
 							</damagelist>
 							<order type="number">2</order>
@@ -3487,7 +3523,7 @@
 						<id-00003>
 							<durmod type="number">1</durmod>
 							<durunit type="string">minute</durunit>
-							<label type="string">Pain Devil; STR: [-2STR]; STR: 16; CON: [-2CON]; CON: 14</label>
+							<label type="string">Pain Devil; ATK: 3, melee; DMG: 3, melee</label>
 							<order type="number">3</order>
 							<targeting type="string">self</targeting>
 							<type type="string">effect</type>
@@ -3495,7 +3531,7 @@
 						<id-00004>
 							<heallist>
 								<id-00001>
-									<bonus type="number">40</bonus>
+									<bonus type="number">100</bonus>
 									<dice type="dice"></dice>
 									<statmult type="number">1</statmult>
 								</id-00001>
@@ -3508,16 +3544,55 @@
 					</actions>
 					<cast type="number">0</cast>
 					<description type="formattedtext">
-						<p>At 20th level you may use your action to become a Pain Devil for one minute. Your size becomes large. Your Strength becomes 26 (+8) and your Constitution becomes 24 (+7). You emanate an aura of pain forcing every creature that starts their turn within 20 feet of you to make a DC 16 Constitution saving throw or suffer 4d12 points of damage on a failed save (half that on a successful saving throw) at the beginning of each turn as wounds in their flesh spontaneously open. Affected targets can repeat the saving throw at the end of each of their turns, ending the effect on a success. Once a creature saves, they are immune to this ability for 24 hours.</p>
+						<p>At 20th level you may use your action to become a Pain Devil for one minute. Your size becomes large. Your gain +3 to hit and damage with melee weapons. You gain 100 temporary hit points.</p>
+						<p>You emanate an aura of pain forcing every creature that starts their turn within 20 feet of you to make a DC 16 Constitution saving throw or suffer 4d12 points of force damage on a failed save (half that on a successful saving throw) at the beginning of each turn as wounds in their flesh spontaneously open. Affected targets can repeat the saving throw at the end of each of their turns, ending the effect on a success. Once a creature saves, they are immune to this ability for 24 hours.</p>
 						<p>Your type becomes (devil) and while you are in this form, Hell is your home plane. You replenish this ability after a long rest.</p>
 					</description>
 					<group type="string">Pain Devil</group>
+					<level type="number">0</level>
 					<locked type="number">1</locked>
 					<name type="string">Pain Devil</name>
 					<prepared type="number">0</prepared>
 					<specialization type="string">Painkiller</specialization>
 					<specializationchoice type="number">0</specializationchoice>
 				</id-00013>
+				<id-00014>
+					<actions>
+						<id-00001>
+							<atkmod type="number">0</atkmod>
+							<atkprof type="number">1</atkprof>
+							<order type="number">1</order>
+							<savedcbase type="string">ability</savedcbase>
+							<savedcmod type="number">0</savedcmod>
+							<savedcprof type="number">1</savedcprof>
+							<savedcstat type="string">charisma</savedcstat>
+							<savemagic type="number">0</savemagic>
+							<savetype type="string">wisdom</savetype>
+							<type type="string">cast</type>
+						</id-00001>
+						<id-00002>
+							<label type="string">Grappled</label>
+							<order type="number">2</order>
+							<type type="string">effect</type>
+						</id-00002>
+						<id-00003>
+							<label type="string">Restrained</label>
+							<order type="number">3</order>
+							<type type="string">effect</type>
+						</id-00003>
+					</actions>
+					<cast type="number">0</cast>
+					<description type="formattedtext">
+						<p>Starting at 7th level you may, as an action, place a seal on an enemy within 30'. If they are large or smaller, they must make a wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier) or be grappled (escape DC 15) and the target is restrained until the grapple ends.</p>
+					</description>
+					<group type="string">By the Throat</group>
+					<locked type="number">1</locked>
+					<name type="string">By the Throat</name>
+					<prepared type="number">0</prepared>
+					<source type="string">Illrigger</source>
+					<specialization type="string">Painkiller</specialization>
+					<specializationchoice type="number">0</specializationchoice>
+				</id-00014>
 			</powers>
 			<profbonus type="number">6</profbonus>
 			<proficiencylist>
@@ -3691,8 +3766,8 @@
 								<link class="reference_classfeature" recordname="....features.id-00012">Invoke Authority (Painkiller)</link>
 								<link class="reference_classfeature" recordname="....features.id-00024">Bonus Proficiencies (Painkiller)</link>
 								<link class="reference_classfeature" recordname="....features.id-00033">I Am Death</link>
-								<link class="reference_classfeature" recordname="....features.id-00028">Battlefield Commander</link>
-								<link class="reference_classfeature" recordname="....features.id-00029">Leadership</link>
+								<link class="reference_classfeature" recordname="....features.id-00028">By the Throat</link>
+								<link class="reference_classfeature" recordname="....features.id-00029">Telekinetic Seal</link>
 								<link class="reference_classfeature" recordname="....features.id-00034">Hell's Fury</link>
 								<link class="reference_classfeature" recordname="....features.id-00030">You Die on My Command</link>
 								<link class="reference_classfeature" recordname="....features.id-00031">Steelmind</link>
@@ -3716,6 +3791,7 @@
 								<link class="reference_classfeature" recordname="....features.id-00013">Invoke Authority (Shadowmaster)</link>
 								<link class="reference_classfeature" recordname="....features.id-00017">Flash of Brimstone</link>
 								<link class="reference_classfeature" recordname="....features.id-00018">Bonus Proficiencies (Shadowmaster)</link>
+								<link class="reference_classfeature" recordname="....features.id-00045">Dagger Adept</link>
 								<link class="reference_classfeature" recordname="....features.id-00025">Marked for Death</link>
 								<link class="reference_classfeature" recordname="....features.id-00019">Relentless</link>
 								<link class="reference_classfeature" recordname="....features.id-00020">Only a Memory</link>
@@ -3760,7 +3836,7 @@
 						<name type="string">Forked Tongue</name>
 						<specializationchoice type="number">0</specializationchoice>
 						<text type="formattedtext">
-							<p>At 1st level, you gain proficiency in either Intimidation, Deception, or Persuasion. If you already have proficiency in one of these skills, you may instead choose to gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus.</p>
+							<p>You have a facility with speech and know how to manipulate an audience. Whenever you make an ability check to persuade, deceive, or intimidate, you can treat a d20 roll of 7 or lower as an 8.</p>
 						</text>
 					</id-00001>
 					<id-00002>
@@ -4085,21 +4161,21 @@
 					<id-00028>
 						<level type="number">7</level>
 						<locked type="number">1</locked>
-						<name type="string">Battlefield Commander</name>
+						<name type="string">By the Throat</name>
 						<specialization type="string">Painkiller</specialization>
 						<specializationchoice type="number">0</specializationchoice>
 						<text type="formattedtext">
-							<p>Upon reaching 7th level your strength or constitution increases by 1, to a maximum of 20.</p>
+							<p>Starting at 7th level you may, as an action, place a seal on an enemy within 30'. If they are large or smaller, they must make a wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier) or be grappled (escape DC 15) and the target is restrained until the grapple ends.</p>
 						</text>
 					</id-00028>
 					<id-00029>
 						<level type="number">9</level>
 						<locked type="number">1</locked>
-						<name type="string">Leadership</name>
+						<name type="string">Telekinetic Seal</name>
 						<specialization type="string">Painkiller</specialization>
 						<specializationchoice type="number">0</specializationchoice>
 						<text type="formattedtext">
-							<p>At 9th level, allies who can see and hear you gain +2 to their rolls when making a strength or dexterity skill check or saving throw.</p>
+							<p>Starting at 9th level you may, as a reaction to an enemy moving into a space adjacent to you, place a seal on them. If you do, they must make a wisdom saving throw. If they fail, they are thrown back 30 feet and knocked prone.</p>
 						</text>
 					</id-00029>
 					<id-00030>
@@ -4129,7 +4205,8 @@
 						<specialization type="string">Painkiller</specialization>
 						<specializationchoice type="number">0</specializationchoice>
 						<text type="formattedtext">
-							<p>At 20th level you may use your action to become a Pain Devil for one minute. Your size becomes large. Your Strength becomes 26 (+8) and your Constitution becomes 24 (+7). You emanate an aura of pain forcing every creature that starts their turn within 20 feet of you to make a DC 16 Constitution saving throw or suffer 4d12 points of damage on a failed save (half that on a successful saving throw) at the beginning of each turn as wounds in their flesh spontaneously open. Affected targets can repeat the saving throw at the end of each of their turns, ending the effect on a success. Once a creature saves, they are immune to this ability for 24 hours.</p>
+							<p>At 20th level you may use your action to become a Pain Devil for one minute. Your size becomes large. Your gain +3 to hit and damage with melee weapons. You gain 100 temporary hit points.</p>
+							<p>You emanate an aura of pain forcing every creature that starts their turn within 20 feet of you to make a DC 16 Constitution saving throw or suffer 4d12 points of force damage on a failed save (half that on a successful saving throw) at the beginning of each turn as wounds in their flesh spontaneously open. Affected targets can repeat the saving throw at the end of each of their turns, ending the effect on a success. Once a creature saves, they are immune to this ability for 24 hours.</p>
 							<p>Your type becomes (devil) and while you are in this form, Hell is your home plane. You replenish this ability after a long rest.</p>
 						</text>
 					</id-00032>
@@ -4420,10 +4497,9 @@
 						<specialization type="string">Architect of Ruin</specialization>
 						<specializationchoice type="number">0</specializationchoice>
 						<text type="formattedtext">
-							<p>At 20th level you may use your action to become a Lore Devil for one minute. Your Charisma becomes 24 (+7) increasing your number of seals, your spell DC, and any other charisma-based effects accordingly. Any ongoing spells you are maintaining from before you transformed into a Lore Devil keep their original DC. You emanate an interference aura, forcing any creature within 60’ attempting to cast a spell to first succeed at a DC 18 Intelligence saving throw or the spell fails and they lose the spell slot.</p>
-							<p>At the start of each of your turns, you roll 1d4 and recover that many levels in spell slots. You may combine these slots however you wish. If you roll a four, you may recover four 1st level spell slots, one 4th level spell slot, two 2nd level slots, or one 3rd level and one 1st level slot.</p>
-							<p>If you do not have enough spent slots to use all the slots you recover, you recover all you can and ignore the excess. For instance, if you roll a 4, but only have one spent 1st level slot, you recover that slot and ignore the excess.</p>
-							<p>You replenish this ability after a long rest. At their discretion, your GM may choose one codex and grant you limited use of one of the abilities from that codex.</p>
+							<p>At 20th level you may use your action to become a Lore Devil for one minute. You gain three extra seals. Enemies with seals on them automatically fail their saving throws against your spells. You emanate an interference aura, forcing any creature within 60’ attempting to cast a spell to first succeed at a DC 18 Intelligence saving throw or the spell fails and they lose the spell slot.</p>
+							<p>Whenever you use a spell slot to cast a spell, there is a 25% chance the spell works normally but you do not lose the spell slot.</p>
+							<p>Your type becomes (devil) and while you are in this form, Hell is your home plane. You replenish this ability after a long rest. At their discretion, your GM may choose one codex and grant you limited use of one of the abilities from that codex.</p>
 						</text>
 					</id-00041>
 					<id-00042>
@@ -4456,6 +4532,20 @@
 							<p>At 18th level you gain advantage on saving throws against spells and magical effects from interdicted creatures.</p>
 						</text>
 					</id-00044>
+					<id-00045>
+						<level type="number">3</level>
+						<locked type="number">1</locked>
+						<name type="string">Dagger Adept</name>
+						<specialization type="string">Shadowmaster</specialization>
+						<specializationchoice type="number">0</specializationchoice>
+						<text type="formattedtext">
+							<p>Your training makes you skilled with certain light weapons. While two-weapon fighting with daggers and/or sickles, you can add your ability modifier to the damage of the second attack, and you can draw or stow two daggers or sickles when you would normally be able to draw or stow only one.</p>
+							<p>At 5th level your daggers and sickles do 1d6 damage.</p>
+							<p>At 9th level while two-weapon fighting with daggers and/or sickles you attack three times whenever you take the Attack action on your turn.</p>
+							<p>At 11th level your daggers and sickles do 1d8 damage.</p>
+							<p>At 17th level your daggers and sickles do 1d10 damage.</p>
+						</text>
+					</id-00045>
 				</features>
 				<hp>
 					<hitdice>
@@ -5676,7 +5766,7 @@
 					<p>A pregenerated 20th level character for each subclass is provided as an example of how one might set up the abilities on the Actions tab. While each ability may be copied by dragging and dropping, the groups cannot and will require manual setup for tracking uses. See below for additional notes on each ability.</p>
 					<h>The Illrigger</h>
 					<p><b>Forked Tongue</b></p>
-					<p>Manage via the skills tab.</p>
+					<p>Requires manual consideration.</p>
 					<p><b>Infernal Conduit</b></p>
 					<p>The healing effect, unfortunately, must be done manually as there is not a built-in mechanism for health transfer. Also, take care to negate any resistance or vulnerability your might have yourself when transfering health to an ally.</p>
 					<p>Note that the Exhaustion effect should either be removed or ignored until level 11.</p>
@@ -5697,7 +5787,9 @@
 					<p><b>Invoke Authority</b></p>
 					<p>Moloch's blessing is included for usage tracking.</p>
 					<p><b>Flash of Brimstone</b></p>
-					<p>Movement must ben handled manually.</p>
+					<p>Movement must be handled manually.</p>
+					<p><b>Dagger Adept</b></p>
+					<p>Make modifications to weapon entries as needed.</p>
 					<p><b>Relentless</b></p>
 					<p>Update character move speed.</p>
 					<p><b>Only a Memory</b></p>
@@ -5717,10 +5809,10 @@
 					<p>Both options are present for tracking usage.</p>
 					<p><b>I Am Death</b></p>
 					<p>Shift+drag to target.</p>
-					<p><b>Battlefield Commander</b></p>
-					<p>Directly modify the chosen ability.</p>
-					<p><b>Leadership</b></p>
-					<p>Apply to allies for fun and profit. Keep blinded and deafened in mind, as there isn't a way to automate that conditional logic.</p>
+					<p><b>By the Throat</b></p>
+					<p>Be sure to apply the seal. Otherwise it just works.</p>
+					<p><b>Telekinetic Seal</b></p>
+					<p>Apply the seal and trigger the save when. Movement must be done manually.</p>
 					<p><b>Hell's Fury</b></p>
 					<p>Swing away.</p>
 					<p><b>You Die on My Command</b></p>
@@ -5730,7 +5822,7 @@
 					<p><b>Deathstrike</b></p>
 					<p>Regrettably unable to automate.</p>
 					<p><b>Pain Devil</b></p>
-					<p>Size will need to be manually adjusted. The health impact of increasing constitution is difficult in Fantsy Grounds. Temporary hitpoints (assuming a base constitution score of 20) is a convenient workaround if lacking in areas such as interaction with actual temporary hitpoints or healing back up to full.</p>
+					<p>Size will need to be manually adjusted. Type and home plane will also require manual consideration for applicable effects. Otherwise it works as advertised.</p>
 					<h>Architect of Ruin</h>
 					<p><b>Invoke Authority</b></p>
 					<p>Spellbreaker is included for usage tracking.</p>
@@ -5754,8 +5846,8 @@
 					<p><b>Magic Resistance</b></p>
 					<p>Magic Resistance can't be automated to apply on in regard to a target's spells, so this will need to be done manually.</p>
 					<p><b>Lore Devil</b></p>
-					<p>Spell recouperation and extra seals must be handled manually.</p>
-					<p>If there are any ongoing spells from prior the "Pre-Lore Devil Spell" effect may be applied to the target as needed prior to them making repeated saving throws.</p>
+					<p>Extra seals must be handled manually. Type and home plane will also require manual consideration for applicable effects.</p>
+					<p>Upon casting a spell roll a d4, don't mark the slot as used if a 4 is rolled.</p>
 					<h>New Spells</h>
 					<p><b>Aura of Desecration</b></p>
 					<p>Healing will need to be handled manually. Default parsing uses rounds instead of minutes.</p>
