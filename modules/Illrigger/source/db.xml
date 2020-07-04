@@ -4249,7 +4249,7 @@
 						<text type="formattedtext">
 							<p>When Asmodeus accepts you as an Architect of Ruin, you gain access to his infernal power and learn to access divine magic to cast illrigger spells.</p>
 							<linklist>
-								<link class="referencemanualpage" recordname="reference.pages.page_a_0">Architect of Ruin Spells</link>
+								<link class="referencemanualpage" recordname="reference.pages.page_spells">Architect of Ruin Spells</link>
 							</linklist>
 							<p>
 								<b>Preparing and Casting Spells</b>
@@ -5727,7 +5727,7 @@
 								<page_0_0>
 									<listlink type="windowreference">
 										<class>reference_manualtextwide</class>
-										<recordname>reference.pages.page_0_0</recordname>
+										<recordname>reference.pages.page_preface</recordname>
 										<description><field>Preface</field></description>
 									</listlink>
 									<name type="string">Preface</name>
@@ -5736,12 +5736,21 @@
 								<page_0_1>
 									<listlink type="windowreference">
 										<class>reference_manualtextwide</class>
-										<recordname>reference.pages.page_0_1</recordname>
+										<recordname>reference.pages.page_changes</recordname>
+										<description><field>Changes</field></description>
+									</listlink>
+									<name type="string">Changes</name>
+									<keywords type="string">changes</keywords>
+								</page_0_1>
+								<page_0_2>
+									<listlink type="windowreference">
+										<class>reference_manualtextwide</class>
+										<recordname>reference.pages.page_instructions</recordname>
 										<description><field>Intructions for Use</field></description>
 									</listlink>
 									<name type="string">Intructions for Use</name>
 									<keywords type="string">use howto how help instructions</keywords>
-								</page_0_1>
+								</page_0_2>
 							</refpages>
 						</subchapter_0>
 					</subchapters>
@@ -5749,17 +5758,42 @@
 			</chapters>
 		</refmanualindex>
 		<pages static="true">
-			<page_0_0>
+			<page_preface>
 				<name type="string">Preface</name>
 				<text type="formattedtext">
-					<h>v2.0</h>
+					<h>v2.2</h>
 					<p>The Illrigger is MCDM’s first custom class. Illriggers are intended to be versatile armored warriors with a wide array of supernatural abilities that reflect the infernal source of their power. Depending on their contract they can be highly mobile stealthy assassins, heavily armored battlefield commanders, or fighting mages and anti-mages. We hope you like this beta test, your feedback will make the class more fun and playable for everyone.</p>
 					<p>The Illrigger is weird: one of its core abilities, Baleful Interdict, improves based on which Archdevil you serve. So instead of three improvements to one ability listed at the top of the document, Baleful Interdict is described once, but then under each specialty there are three dif erent improvements. We think this allows the different Illrigger specializations to shine and feel unique. 3rd party design is a good place for such weirdness, we feel.</p>
 					<p>At this point the Illrigger has undergone a lot of testing and revision. We’ll always be updating the class based on how people are using it, but we feel the current text largely reflects our design goals.</p>
 					<p>If you get the chance, please use the illrigger in your game and report back. Often, something will <b>seem</b> complex or overpowered or underpowered when you read it, but then it turns out not to be a problem in play. It’s very easy to <b>imagine</b> scenarios where an ability might be unbalanced, but in <b>practice</b> that scenario might be very rare.</p>
 				</text>
-			</page_0_0>
-			<page_0_1>
+			</page_preface>
+			<page_changes>
+				<name type="string">Changes</name>
+				<blocks>
+					<block_01>
+						<blocktype type="string">header</blocktype>
+						<text type="string">Changes from 2.1</text>
+						<!-- <text type="formattedtext"><p>Changes from 2.1</p></text> -->
+					</block_01>
+					<block_02>
+						<text type="formattedtext">
+							<h>Painkiller</h>
+							<p>The Painkiller had some lackluster abilities which we’ve replaced with powers that are more evocative and better fit the theme of the subclass.</p>
+							<p><b>By The Throat</b> replaces <b>Battlefield Commander</b>.</p>
+							<p><b>Telekinetic Seal</b> replaces <b>Leadership</b>.</p>
+							<h>Shadowmaster</h>
+							<p>We’d like to encourage Shadowmasters to be competitive using only daggers (or sickles, or any exotic homebrew light weapon the DM feels is appropriate) and so added the ability <b>Dagger Adept</b> at 3rd level which increases the number of attacks, and damage dice of these weapons at certain levels.</p>
+							<p>The goal is not to make the Shadowmaster <i>better</i> with these weapons than other classes are with their signature weapon; only to allow the Shadowmaster to use “only daggers” and still be competitive.</p>
+							<h>Ults</h>
+							<p>Two Illriggers subclasses, the Painkiller and the Architect of Ruin have 20th level capstone abilities that grant increases to their stats. Tracking stat changes is tedious and useful only insofar as they affect things like attacks, hit points and save DCs. So we removed that language and just granted bonuses to those things directly.</p>
+							<h>Forked Tongue</h>
+							<p>This ability was needlessly complex, so we revised it to create a lower-bound to the player’s roll, rather than referencing proficiencies or bonuses.</p>
+						</text>
+					</block_02>
+				</blocks>
+			</page_changes>
+			<page_instructions>
 				<name type="string">Intructions for Use</name>
 				<text type="formattedtext">
 					<h>General Notes</h>
@@ -5862,8 +5896,8 @@
 					<p>The default parsing has a redundant instance of the damage and has a 1 round duration instead of 1 minute.</p>
 					<p>Healing and failed death save must be tracked manually.</p>
 				</text>
-			</page_0_1>
-			<page_a_0>
+			</page_instructions>
+			<page_spells>
 				<name type="string">Architect of Ruin Spells</name>
 				<text type="formattedtext">
 					<p>
@@ -5956,7 +5990,7 @@
 						<i>** placeholder for spell not included in SRD</i>
 					</p>
 				</text>
-			</page_a_0>
+			</page_spells>
 		</pages>
 	</reference>
 </root>
