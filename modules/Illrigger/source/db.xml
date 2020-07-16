@@ -453,7 +453,6 @@
 					<text type="formattedtext">
 						<p>Your training makes you skilled with certain light weapons. While two-weapon fighting with daggers and/or sickles, you can add your ability modifier to the damage of the second attack, and you can draw or stow two daggers or sickles when you would normally be able to draw or stow only one.</p>
 						<p>At 5th level your daggers and sickles do 1d6 damage.</p>
-						<p>At 9th level while two-weapon fighting with daggers and/or sickles you attack three times whenever you take the Attack action on your turn.</p>
 						<p>At 11th level your daggers and sickles do 1d8 damage.</p>
 						<p>At 17th level your daggers and sickles do 1d10 damage.</p>
 					</text>
@@ -1338,8 +1337,8 @@
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00011">Invoke Authority (Architect of Ruin)</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00036">Spellcasting</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00042">Hellmage</link>
-							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00037">Veteran of Sorcery</link>
-							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00038">This is no Illusion</link>
+							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00037">Spellmaster</link>
+							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00038">Instant Illusion</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00043">Submit!</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00039">By Will Alone</link>
 							<link class="reference_classfeature" recordname="reference.classdata.id-00001.features.id-00040">Asmodeus' Blessing</link>
@@ -1358,9 +1357,9 @@
 					<text type="formattedtext">
 						<p>Asmodeus’ fighting mages must be able to thwart an enemy’s spells as well as their plans.</p>
 						<p>
-							<b>Spellmaster.</b> Use your reaction when casting a concentration spell to gain advantage on concentration checks you make while the spell is active.</p>
-						<p>
 							<b>Spellbreaker. </b>You call on Asmodeus’ authority and cast counterspell as a reaction to an enemy spellcaster’s magic. The level of your counterspell is equal to your charisma modifier (minimum 3).</p>
+						<p>
+							<b>veteran.</b> Use your reaction when casting a concentration spell to gain advantage on concentration checks you make while the spell is active.</p>
 					</text>
 				</id-00006>
 				<id-00007>
@@ -1648,23 +1647,23 @@
 				<id-00014>
 					<level type="number">7</level>
 					<locked type="number">1</locked>
-					<name type="string">Veteran of Sorcery</name>
+					<name type="string">Spellmaster</name>
 					<source type="string">Illrigger</source>
 					<specialization type="string">Architect of Ruin</specialization>
 					<specializationchoice type="number">0</specializationchoice>
 					<text type="formattedtext">
-						<p>At 7th level, as a reaction to failing a saving throw, you may choose to succeed instead. This ability recharges after a long rest.</p>
+						<p>Starting at 7th level, you have advantage on concentration checks made to maintain your spells.</p>
 					</text>
 				</id-00014>
 				<id-00015>
 					<level type="number">9</level>
 					<locked type="number">1</locked>
-					<name type="string">This is no Illusion</name>
+					<name type="string">Instant Illusion</name>
 					<source type="string">Illrigger</source>
 					<specialization type="string">Architect of Ruin</specialization>
 					<specializationchoice type="number">0</specializationchoice>
 					<text type="formattedtext">
-						<p>At 9th level, enemies making saving throws against your illusion spells or ability checks to determine that they are illusions have disadvantage.</p>
+						<p>Starting at 9th level when you place a seal on an enemy you may, as a reaction, cast an illusion spell that normally has a casting time of 1 action.</p>
 					</text>
 				</id-00015>
 				<id-00016>
@@ -1822,7 +1821,7 @@
 				<id-00009>
 					<atkmod type="number">0</atkmod>
 					<atkprof type="number">1</atkprof>
-					<name type="string">Veteran of Sorcery</name>
+					<name type="string">Spellmaster</name>
 					<prepared type="number">0</prepared>
 					<savemod type="number">0</savemod>
 					<saveprof type="number">1</saveprof>
@@ -2079,8 +2078,7 @@
 				<id-00006>
 					<actions>
 						<id-00001>
-							<durmod type="number">1</durmod>
-							<durunit type="string">minute</durunit>
+							<durmod type="number">0</durmod>
 							<label type="string">Spellmaster; ADVSAV: concentration; (C)</label>
 							<order type="number">1</order>
 							<targeting type="string">self</targeting>
@@ -2089,18 +2087,12 @@
 					</actions>
 					<cast type="number">0</cast>
 					<description type="formattedtext">
-						<p>Asmodeus’ fighting mages must be able to thwart an enemy’s spells as well as their plans.</p>
-						<p>
-							<b>Spellmaster.</b> Use your reaction when casting a concentration spell to gain advantage on concentration checks you make while the spell is active.</p>
-						<p>
-							<b>Spellbreaker. </b>You call on Asmodeus’ authority and cast counterspell as a reaction to an enemy spellcaster’s magic. The level of your counterspell is equal to your charisma modifier (minimum 3).</p>
+						<p>Starting at 7th level, you have advantage on concentration checks made to maintain your spells.</p>
 					</description>
-					<group type="string">Invoke Authority</group>
-					<level type="number">0</level>
+					<group type="string">Spellmaster</group>
 					<locked type="number">1</locked>
 					<name type="string">Spellmaster</name>
 					<prepared type="number">0</prepared>
-					<ritual type="number">0</ritual>
 					<specialization type="string">Architect of Ruin</specialization>
 					<specializationchoice type="number">0</specializationchoice>
 				</id-00006>
@@ -2110,9 +2102,9 @@
 					<description type="formattedtext">
 						<p>Asmodeus’ fighting mages must be able to thwart an enemy’s spells as well as their plans.</p>
 						<p>
-							<b>Spellmaster.</b> Use your reaction when casting a concentration spell to gain advantage on concentration checks you make while the spell is active.</p>
+							<b>Veteran of Sorcery.</b> As a reaction to failing a saving throw against a spell, you may choose to succeed instead.</p>
 						<p>
-							<b>Spellbreaker. </b>You call on Asmodeus’ authority and cast counterspell as a reaction to an enemy spellcaster’s magic. The level of your counterspell is equal to your charisma modifier (minimum 3).</p>
+							<b>Spellbreaker.</b> You call on Asmodeus’ authority and cast counterspell as a reaction to an enemy spellcaster’s magic. The level of your counterspell is equal to your charisma modifier (minimum 3).</p>
 					</description>
 					<group type="string">Invoke Authority</group>
 					<level type="number">0</level>
@@ -2127,12 +2119,18 @@
 					<actions />
 					<cast type="number">0</cast>
 					<description type="formattedtext">
-						<p>At 7th level, as a reaction to failing a saving throw, you may choose to succeed instead. This ability recharges after a long rest.</p>
+						<p>Asmodeus’ fighting mages must be able to thwart an enemy’s spells as well as their plans.</p>
+						<p>
+							<b>Veteran of Sorcery.</b> As a reaction to failing a saving throw against a spell, you may choose to succeed instead.</p>
+						<p>
+							<b>Spellbreaker.</b> You call on Asmodeus’ authority and cast counterspell as a reaction to an enemy spellcaster’s magic. The level of your counterspell is equal to your charisma modifier (minimum 3).</p>
 					</description>
-					<group type="string">Veteran of Sorcery</group>
+					<group type="string">Invoke Authority</group>
+					<level type="number">0</level>
 					<locked type="number">1</locked>
 					<name type="string">Veteran of Sorcery</name>
 					<prepared type="number">0</prepared>
+					<ritual type="number">0</ritual>
 					<specialization type="string">Architect of Ruin</specialization>
 					<specializationchoice type="number">0</specializationchoice>
 				</id-00009>
@@ -2298,7 +2296,7 @@
 						<p>You produce a whip of electric red energy that lashes out at a creature within range, creating a conduit between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d10 fire damage, and on each of your tums for the duration you can use your action to deal 1d10 fire damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell’s range or if it has total cover from you.</p>
 						<p>
 							<b>At higher levels:</b> when you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d10 for each slot level above 1st.</p>
-						<p>If the target has one of your seals on it, the damage from the hellish conduit is maximized.</p>
+						<p>If the target has one of your seals on it, the damage from the infernal whip is maximized.</p>
 					</description>
 					<duration type="string">Concentration, up to 1 minute</duration>
 					<group type="string">Spells</group>
@@ -3818,8 +3816,8 @@
 								<link class="reference_classfeature" recordname="....features.id-00011">Invoke Authority (Architect of Ruin)</link>
 								<link class="reference_classfeature" recordname="....features.id-00036">Spellcasting</link>
 								<link class="reference_classfeature" recordname="....features.id-00042">Hellmage</link>
-								<link class="reference_classfeature" recordname="....features.id-00037">Veteran of Sorcery</link>
-								<link class="reference_classfeature" recordname="....features.id-00038">This is no Illusion</link>
+								<link class="reference_classfeature" recordname="....features.id-00037">Spellmaster</link>
+								<link class="reference_classfeature" recordname="....features.id-00038">Instant Illusion</link>
 								<link class="reference_classfeature" recordname="....features.id-00043">Submit!</link>
 								<link class="reference_classfeature" recordname="....features.id-00039">By Will Alone</link>
 								<link class="reference_classfeature" recordname="....features.id-00040">Asmodeus' Blessing</link>
@@ -3961,9 +3959,9 @@
 						<text type="formattedtext">
 							<p>Asmodeus’ fighting mages must be able to thwart an enemy’s spells as well as their plans.</p>
 							<p>
-								<b>Spellmaster.</b> Use your reaction when casting a concentration spell to gain advantage on concentration checks you make while the spell is active.</p>
+								<b>Veteran of Sorcery.</b> As a reaction to failing a saving throw against a spell, you may choose to succeed instead.</p>
 							<p>
-								<b>Spellbreaker. </b>You call on Asmodeus’ authority and cast counterspell as a reaction to an enemy spellcaster’s magic. The level of your counterspell is equal to your charisma modifier (minimum 3).</p>
+								<b>Spellbreaker.</b> You call on Asmodeus’ authority and cast counterspell as a reaction to an enemy spellcaster’s magic. The level of your counterspell is equal to your charisma modifier (minimum 3).</p>
 						</text>
 					</id-00011>
 					<id-00012>
@@ -4450,21 +4448,21 @@
 					<id-00037>
 						<level type="number">7</level>
 						<locked type="number">1</locked>
-						<name type="string">Veteran of Sorcery</name>
+						<name type="string">Spellmaster</name>
 						<specialization type="string">Architect of Ruin</specialization>
 						<specializationchoice type="number">0</specializationchoice>
 						<text type="formattedtext">
-							<p>At 7th level, as a reaction to failing a saving throw, you may choose to succeed instead. This ability recharges after a long rest.</p>
+							<p>Starting at 7th level, you have advantage on concentration checks made to maintain your spells.</p>
 						</text>
 					</id-00037>
 					<id-00038>
 						<level type="number">9</level>
 						<locked type="number">1</locked>
-						<name type="string">This is no Illusion</name>
+						<name type="string">Instant Illusion</name>
 						<specialization type="string">Architect of Ruin</specialization>
 						<specializationchoice type="number">0</specializationchoice>
 						<text type="formattedtext">
-							<p>At 9th level, enemies making saving throws against your illusion spells or ability checks to determine that they are illusions have disadvantage.</p>
+							<p>Starting at 9th level when you place a seal on an enemy you may, as a reaction, cast an illusion spell that normally has a casting time of 1 action.</p>
 						</text>
 					</id-00038>
 					<id-00039>
@@ -4541,7 +4539,6 @@
 						<text type="formattedtext">
 							<p>Your training makes you skilled with certain light weapons. While two-weapon fighting with daggers and/or sickles, you can add your ability modifier to the damage of the second attack, and you can draw or stow two daggers or sickles when you would normally be able to draw or stow only one.</p>
 							<p>At 5th level your daggers and sickles do 1d6 damage.</p>
-							<p>At 9th level while two-weapon fighting with daggers and/or sickles you attack three times whenever you take the Attack action on your turn.</p>
 							<p>At 11th level your daggers and sickles do 1d8 damage.</p>
 							<p>At 17th level your daggers and sickles do 1d10 damage.</p>
 						</text>
@@ -5639,7 +5636,7 @@
 					<p>You produce a whip of electric red energy that lashes out at a creature within range, creating a conduit between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d10 fire damage, and on each of your tums for the duration you can use your action to deal 1d10 fire damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell’s range or if it has total cover from you.</p>
 					<p>
 						<b>At higher levels:</b> when you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d10 for each slot level above 1st.</p>
-					<p>If the target has one of your seals on it, the damage from the hellish conduit is maximized.</p>
+					<p>If the target has one of your seals on it, the damage from the infernal whip is maximized.</p>
 				</description>
 				<duration type="string">Concentration, up to 1 minute</duration>
 				<level type="number">1</level>
@@ -5761,7 +5758,7 @@
 			<page_preface>
 				<name type="string">Preface</name>
 				<text type="formattedtext">
-					<h>v2.2</h>
+					<h>v2.3</h>
 					<p>The Illrigger is MCDM’s first custom class. Illriggers are intended to be versatile armored warriors with a wide array of supernatural abilities that reflect the infernal source of their power. Depending on their contract they can be highly mobile stealthy assassins, heavily armored battlefield commanders, or fighting mages and anti-mages. We hope you like this beta test, your feedback will make the class more fun and playable for everyone.</p>
 					<p>The Illrigger is weird: one of its core abilities, Baleful Interdict, improves based on which Archdevil you serve. So instead of three improvements to one ability listed at the top of the document, Baleful Interdict is described once, but then under each specialty there are three dif erent improvements. We think this allows the different Illrigger specializations to shine and feel unique. 3rd party design is a good place for such weirdness, we feel.</p>
 					<p>At this point the Illrigger has undergone a lot of testing and revision. We’ll always be updating the class based on how people are using it, but we feel the current text largely reflects our design goals.</p>
@@ -5773,10 +5770,26 @@
 				<blocks>
 					<block_01>
 						<blocktype type="string">header</blocktype>
-						<text type="string">Changes from 2.1</text>
-						<!-- <text type="formattedtext"><p>Changes from 2.1</p></text> -->
+						<text type="string">Changes from 2.2</text>
 					</block_01>
 					<block_02>
+						<text type="formattedtext">
+							<h>Architect of Ruin</h>
+							<p>Veteran of Sorcery updated to only work on spells.</p>
+							<p>Veteran of Sorcery and Spellmaster swapped in progression.</p>
+							<p>Spellmaster reworked.</p>
+							<p>This is No Illusion was replaced with Instant Illusion.</p>
+							<h>Shadowmaster</h>
+							<p>Removed the extra attack at level 11.</p>
+							<h>Spells</h>
+							<p>Hell’s Lash wording revised to make it clear seals only maximize the effect of this spell.</p>
+						</text>
+					</block_02>
+					<block_03>
+						<blocktype type="string">header</blocktype>
+						<text type="string">Changes from 2.1</text>
+					</block_03>
+					<block_04>
 						<text type="formattedtext">
 							<h>Painkiller</h>
 							<p>The Painkiller had some lackluster abilities which we’ve replaced with powers that are more evocative and better fit the theme of the subclass.</p>
@@ -5790,7 +5803,7 @@
 							<h>Forked Tongue</h>
 							<p>This ability was needlessly complex, so we revised it to create a lower-bound to the player’s roll, rather than referencing proficiencies or bonuses.</p>
 						</text>
-					</block_02>
+					</block_04>
 				</blocks>
 			</page_changes>
 			<page_instructions>
@@ -5859,18 +5872,16 @@
 					<p>Size will need to be manually adjusted. Type and home plane will also require manual consideration for applicable effects. Otherwise it works as advertised.</p>
 					<h>Architect of Ruin</h>
 					<p><b>Invoke Authority</b></p>
+					<p>Veteran of Sorcery is included for usage tracking.</p>
 					<p>Spellbreaker is included for usage tracking.</p>
-					<p>The Spellmaster implementation may require some manual effect management if the following assumptions are incorrect:</p>
-					<p>*the spell being concentrated on will last for 1 minute.</p>
-					<p>*concentration on the spell will not be ended volunatrily in favor of a different concentration spell.</p>
 					<p><b>Spellcasting</b></p>
 					<p>Due to the Illrigger having a unique spell slot progression, they will need to be corrected manually when levelling.</p>
 					<p><b>Hellmage</b></p>
 					<p>Nothing to automate, just mark the seal as used.</p>
-					<p><b>Veteran of Sorcery</b></p>
-					<p>Included for usage tracking.</p>
-					<p><b>This is no Illusion</b></p>
-					<p>Must be handled manually as there isn't any way to automate checks just for illusions.</p>
+					<p><b>Spellmaster</b></p>
+					<p>Be sure to trigger the effect whenevr the character is added to the combat tracker.</p>
+					<p><b>Instant Illusion</b></p>
+					<p>Nothing to automate. Be sure to track the reaction use.</p>
 					<p><b>Submit!</b></p>
 					<p>Apply the effect before the enemy makes their save.</p>
 					<p><b>By Will Alone</b></p>
@@ -5886,14 +5897,14 @@
 					<p><b>Aura of Desecration</b></p>
 					<p>Healing will need to be handled manually. Default parsing uses rounds instead of minutes.</p>
 					<p><b>Hell's Lash</b></p>
-					<p>The default parsing has a redundant instance of the damage and has a 1 round duration instead of 1 minute.</p>
+					<p>The default parsing has a redundant instance of the damage.</p>
 					<p><b>Mote of Hell</b></p>
 					<p>Added blinded effect. It lasts for one round as an assumed method for verifying effect and position.</p>
 					<p>Added self effect for tracking concentration.</p>
 					<p><b>Single Combat</b></p>
 					<p>Added an effect for tracking target and duration, otherwise everything must be handled manually.</p>
 					<p><b>Wall of Death</b></p>
-					<p>The default parsing has a redundant instance of the damage and has a 1 round duration instead of 1 minute.</p>
+					<p>The default parsing has a redundant instance of the damage.</p>
 					<p>Healing and failed death save must be tracked manually.</p>
 				</text>
 			</page_instructions>
