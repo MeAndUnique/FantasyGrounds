@@ -22,6 +22,8 @@
 		<script name="PowerManager2" file="scripts/manager_power2.lua"/>
 		<script name="ActionDamage2" file="scripts/manager_action_damage2.lua"/>
 		<script name="ActionHeal2" file="scripts/manager_action_heal2.lua"/>
+		<script name="EffectManager5ECA" file="scripts/manager_effect_5E_CA.lua"/>
+		<script name="ActorManager2CA" file="scripts/manager_actor2_CA.lua"/>
 
 		<!-- updates the character sheet to add support for max PC HP adjustments as well as toggling between wounds and current HP -->
 		<includefile source="campaign/record_char_main.xml" />
